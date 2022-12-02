@@ -1,0 +1,63 @@
+.icon-row {
+    display: block;
+    padding-bottom: 25px;
+    border-bottom: var(--main-border);
+    margin-top: 20px;
+}
+
+.icon-row--margin {
+    margin-top: 30px;
+}
+
+.icon-row__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-row__row--margin {
+    margin-bottom: 40px;
+}
+
+.icon-row__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.icon-row__icon span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.icon-row__icon--margin span {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.icon-row__icon__double-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.icon-row__icon__double-lines--update span:nth-child(2) {
+    display: flex;
+    width: 7px;
+    height: 7px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    right: 5px;
+}
+
+.icon-row__icon i {
+    margin-bottom: 25px;
+}
+
+.icon-row__icon--margin i {
+    margin-bottom: 15px;
+}

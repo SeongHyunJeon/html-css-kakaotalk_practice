@@ -53,9 +53,23 @@
 }
 
 .user-component__subtitle {
+    display: flex;
     margin-top: 10px;
     font-size: 18px;
     opacity: 0.7;
 }
 
+.user-component__subtitle span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orangered;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    color:orangered;
+    font-size: 15px;
+    font-weight:bolder;
+    margin-left: 5px;
+}
 

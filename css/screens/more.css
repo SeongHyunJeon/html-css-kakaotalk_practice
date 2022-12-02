@@ -1,0 +1,35 @@
+.suggestions {
+    padding-top: 30px;
+}
+
+.suggestions__title {
+    font-size: 17px;
+    font-weight:600;
+    margin-bottom: 20px;
+}
+
+.suggestions__images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.suggestions__image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.suggestions__image span {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
