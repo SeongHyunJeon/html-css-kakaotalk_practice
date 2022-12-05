@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - Kakao Talk</title>
+    <title>Chat - Kakao Talk</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -28,130 +28,57 @@
 
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html">
+        <a href="chats.html">
           <i class="fa-solid fa-angle-left fa-2x"></i>
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">Warren Buffett</h1>
       </div>
       <div class="alt-header__column">
-        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+        <span><i class="fa-solid fa-bars fa-2x"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-bullhorn"></i>
-            <span>Notices</span>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2022</div>
+      <div class="message-row">
+        <img
+          src="https://imgs.search.brave.com/SHHUuibnf-DCYHRBdwWVoeqT9Kp33NfJm2xWjLB68WQ/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC51/WmN0cXJvbTRLbmxs/azVjQmcwbF9BSGFI/YSZwaWQ9QXBp"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Warren Buffett</span>
+          <div class="message__content">
+            <span class="message__bubble"
+              >Don't put all your eggs in one basket!</span
+            >
+            <span class="message__time">21:27</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-flask"></i>
-            <span>Kakao Lab</span>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__content">
+            <span class="message__bubble">JohnBer!</span>
+            <span class="message__time">21:27</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting settings__setting--last-element">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-circle-info"></i>
-            <span>Version</span>
-          </div>
-          <div class="settings__setting-column">Latest Version</div>
-        </li>
-      </ul>
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-lock"></i>
-            <span>Privacy</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-regular fa-bell"></i>
-            <span>Notifications</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-regular fa-user"></i>
-            <span>Friends</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-regular fa-comment"></i>
-            <span>Chats</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-circle-half-stroke"></i>
-            <span>Display</span>
-            <span class="settings__setting-column__update">N</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-brush"></i>
-            <span>Themes</span>
-            <span class="settings__setting-column__update">N</span>
-          </div>
-          <div class="settings__setting-column">Default theme</div>
-        </li>
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fa-solid fa-phone"></i>
-            <span>Call</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="fa-regular fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <i class="fa-regular fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav__update"> </span>
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up-long fa-lg"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/47147f6500.js"
