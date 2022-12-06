@@ -188,7 +188,7 @@
 .reply .reply__column:first-child,
 .reply .fa-face-smile,
 .reply button {
-    transition:opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 
 .reply:focus-within .reply__column:first-child,
